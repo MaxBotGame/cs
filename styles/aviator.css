@@ -1,0 +1,142 @@
+body {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../assets/images/aviator-bg.jpg");
+}
+
+.container {
+  width: 100%;
+  height: 90vh;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+  
+.top-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+  
+.game-logo {
+  min-width: 120px;
+  max-width: 220px;
+  width: 65vmax;
+  margin-top: -30px;
+  margin-left: -15px;
+  margin-bottom: -30px;
+}
+  
+.bot-logo {
+  /* min-width: 120px;
+  max-width: 360px;
+  width: 90%; */
+  margin-bottom: -10px;
+  /* width: 10vmax; */
+  width: 55%;
+}
+  
+
+  
+.tg-icon {
+  display: none;
+  width: 9%;
+}
+  
+  
+  
+.signals-display-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-bottom: -20%;
+}
+  
+.lucky-jet-display {
+  position: relative;
+  width: 140%;
+  aspect-ratio: 1;
+  /* max-width: ; */
+  overflow: hidden;
+  margin: -30%;
+
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/images/lucky-jet-display-bg.png"); */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+}
+
+.lucky-jet-display-bg {
+  width: 87%;
+  position: absolute;
+  display: inline;
+  transition: opacity 0.7s ease;
+  pointer-events:none;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.lucky-jet-signal {
+  z-index: 10;
+  color: white;
+  font-size: 7vmax;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  letter-spacing: 1px;
+} 
+  
+  
+.game-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 2%;
+  z-index: 10;
+}
+  
+.game-button {
+  background-color: #1e2261;
+  background: linear-gradient(#66011f 0% 85%, #9c0130 96% 100%);
+  border: none;
+  padding: 3% 5%;
+  /* width: 60%; */
+  /* height: 6vmax; */
+  font-family: "Zantiqa", sans-serif;
+
+  font-size: 3vmax;
+  text-transform: uppercase;
+  
+  color: white;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.174);
+  transition: transform 0.3s ease, opacity 0.5s ease;
+}
+  
+
+.hidden {
+  opacity: 0.3;
+}
+  
